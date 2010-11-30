@@ -1,0 +1,7 @@
+*.zwc
+*~
+.*.swp
+grs_vars.sh
+/profile.d/local.sh
+/src/*.o
+/bin

@@ -1,0 +1,11 @@
+#compdef _cg cg
+_cg () {
+  test -n "$GRSROOT" || return 0
+
+  local prev
+  prev=$PWD
+
+  cd $GRSROOT
+  _path_files
+  cd $prev
+}

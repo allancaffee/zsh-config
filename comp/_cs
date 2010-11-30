@@ -1,0 +1,5 @@
+#compdef cs
+
+pushd $KDE_SRC
+_path_files 
+popd

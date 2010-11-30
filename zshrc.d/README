@@ -1,0 +1,3 @@
+Any executable files with the extension `.sh' will be sourced by all
+interactive shells at startup.  Executable files with the `.zsh' extension will
+be sourced only for Zsh interactive sessions.

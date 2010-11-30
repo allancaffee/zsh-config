@@ -1,0 +1,15 @@
+#compdef _plait plait
+
+_plait () {
+  _values $(_plait_list_artists)
+}
+
+# This more generic simply offers way too many results.  Instead we're
+# going with a more site-specific approach.
+_plait_list_all () {
+  plait -l / | sed 's,/,\n,g' | sort | uniq
+}
+
+_plait_list_artists () {
+  ls -1 /home/music/
+}

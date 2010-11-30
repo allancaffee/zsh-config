@@ -1,0 +1,5 @@
+#compdef _synergyc synergyc
+_synergyc () {
+	# offer knoppix.ml.dupont.com ws55.cs.drexel.edu debian.home
+	_values 'known synergy servers' knoppix.ml.dupont.com ws55.cs.drexel.edu debian.home
+}

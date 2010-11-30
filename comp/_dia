@@ -1,0 +1,4 @@
+#compdef _dia dia dia2code dia2pdf
+_dia () {
+  _files -g "*.dia"
+}

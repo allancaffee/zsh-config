@@ -1,0 +1,5 @@
+#compdef cb
+
+pushd $KDE_BUILD
+_path_files 
+popd

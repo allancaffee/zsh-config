@@ -1,0 +1,6 @@
+#compdef cz
+  __prev=$PWD
+	cd $ZSH_CUSTOM_CONFIG_DIR
+	_path_files -/
+	cd $__prev
+	unset __prev

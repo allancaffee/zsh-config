@@ -1,0 +1,3 @@
+Any executable files with the extension `.sh' will be sourced by all login
+shells.  Executable files with the `.zsh' extension will be sourced only for
+Zsh login shells.
