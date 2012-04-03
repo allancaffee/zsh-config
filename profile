@@ -1,5 +1,6 @@
 #!/bin/sh
 # Set localized system wide features
+ZSH_CUSTOM_CONFIG_DIR="${ZSH_CUSTOM_CONFIG_DIR:-$HOME/zsh-config}"
 
 export PATH=$PATH:/usr/local/Simili31/tcl/bin
 
