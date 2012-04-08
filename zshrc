@@ -1,4 +1,5 @@
 #!/bin/sh
+PATH=$HOME/bin:$PATH
 ZSH_CUSTOM_CONFIG_DIR="${ZSH_CUSTOM_CONFIG_DIR:-$HOME/zsh-config}"
 
 . $ZSH_CUSTOM_CONFIG_DIR/functions.sh

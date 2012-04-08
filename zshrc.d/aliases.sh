@@ -23,7 +23,6 @@ fi
 
 alias reinit='source /etc/profile'
 alias grep='grep --color=auto'
-alias ls='ls --color=always'
 
 alias pq='plaiter --quit'
 alias pn='plait --next'
@@ -37,7 +36,7 @@ alias pidgin='pidgin >/dev/null 2>/dev/null &'
 alias fetchmail='sudo /usr/sbin/invoke-rc.d fetchmail awaken'
 if which gls >/dev/null 2>/dev/null; then
 	alias ls='gls --color=auto'
-else
+elif ls --help >/dev/null 2>&1; then
 	alias ls='ls --color=auto'
 fi
 alias reinit='source ~/.zshrc'
