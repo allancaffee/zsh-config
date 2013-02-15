@@ -49,9 +49,6 @@ alias okular='okular &>/dev/null'
 alias fx='firefox'
 alias kq='konqueror'
 
-# Use our little hack instead of using synergyc directly.
-alias synergyc='synergyc_hack'
-
 # Aliases for version functions.
 alias git-reapply-patch='git_reapply_patch'
 alias git-reapply-and-commit='git_reapply_and_commit'
