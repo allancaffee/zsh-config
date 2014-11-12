@@ -48,6 +48,8 @@ elif is_zsh; then
 		autoload vcs_info
 		eval 'precmd_functions=($precmd_functions '\''vcs_info'\'')'
 		zstyle ':vcs_info:*' formats '{'$MAGENTA'%b'$NORM'}'
+		# Enable it just for git. It causes crashes with SVN on my machine.
+		zstyle ':vcs_info:*' enable git
 		RPROMPT='$vcs_info_msg_0_'
 	fi
 	PS1="$PS1(%B%?%b)" #Exit status of previous

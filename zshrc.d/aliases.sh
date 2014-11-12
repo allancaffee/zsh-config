@@ -24,6 +24,9 @@ fi
 alias reinit='source /etc/profile'
 alias grep='grep --color=auto'
 
+# Python development
+alias flake8='flake8 --ignore E111,E501,E121'
+
 alias pq='plaiter --quit'
 alias pn='plait --next'
 alias vd='aumix -v-10'

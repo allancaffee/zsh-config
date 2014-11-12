@@ -95,3 +95,11 @@ svn_clean () {
 		rm $@ $f
 	done
 }
+
+
+# Push a feature branch to master and kill it.
+pm () {
+	branch_name=`git rev-parse --abbrev-ref HEAD`
+        git review dcommit
+        git fetch && git rebase origin/master && git push origin "$branch_name:master" && git checkout master && git branch -D "$branch_name"
+}
