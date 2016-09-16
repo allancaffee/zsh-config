@@ -209,3 +209,17 @@ einfo () {
 mcd () {
 	mkdir -p $1 && cd $1
 }
+
+
+# Profiling
+gprof2png () {
+  gprof2dot -f pstats "$1" | dot -Tpng -o "$1.png" -Glabel="$1" -Glabelloc=t
+}
+
+gprofview () {
+  gprof2png "$1" && open "$1.png"
+}
+
+strace_children_only() {
+  sudo -uapp strace -p "$1" -f 2>&1 | grep -v "^\[pid $1\]"
+}
