@@ -28,3 +28,4 @@ is_zsh && source_executable_in_dir $ZSH_CUSTOM_CONFIG_DIR/profile.d zsh
 export PATH=$ZSH_CUSTOM_CONFIG_DIR/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+eval "$(/opt/homebrew/bin/brew shellenv)"
