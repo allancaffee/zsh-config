@@ -61,6 +61,16 @@ else
 fi
 export PS1
 
+clean_prompt() {
+	if [ "`id -u`" = "0" ]; then
+		PS1='# '
+	else
+		PS1='$ '
+	fi
+	unset RPROMPT
+	export PS1
+}
+
 # Clean up the environment
 for var in RED GREEN YELLOW BLUE MAGENTA CYAN WHITE NORM UCOLOR CurShell; do
 	eval unset $var
