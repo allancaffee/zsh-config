@@ -60,11 +60,18 @@ alias git-reapply-and-commit='git_reapply_and_commit'
 alias apt-get='sudo apt-get --assume-yes --fix-broken --quiet'
 alias deb-update='deb_update'
 
-# Mac stuff
+# Replicate Linux stuff on Mac.
 if test -x /Applications/MacVim.app/Contents/MacOS/Vim; then
 	gvim () {
 		/Applications/MacVim.app/Contents/MacOS/Vim -g $*
 	}
 fi
+
+# Replicate Mac stuff on Linux.
+if which xclip >/dev/null 2>&1; then
+	alias pbcopy='xclip -selection clipboard'
+	alias pbpaste='xclip -selection clipboard -o'
+fi
+
 
 fi # Aliases are supported
