@@ -4,11 +4,6 @@ ZSH_CUSTOM_CONFIG_DIR="${ZSH_CUSTOM_CONFIG_DIR:-$HOME/zsh-config}"
 
 export PATH=$PATH:/usr/local/Simili31/tcl/bin
 
-export HISTSIZE=5500                    # Lines of history to save in mem
-export SAVEHIST=5000                    # Lines of history to write out
-export HISTFILE="$HOME/.zsh_history/zsh_history" # File to which history will be saved
-test -d  $(dirname $HISTFILE) || mkdir -p $(dirname $HISTFILE)
-
 . $ZSH_CUSTOM_CONFIG_DIR/functions.sh
 
 if is_zsh; then
